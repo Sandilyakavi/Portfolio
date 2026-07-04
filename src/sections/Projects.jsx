@@ -1,17 +1,65 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiExternalLink, FiBookOpen, FiMic, FiMessageSquare } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, FiBookOpen, FiMic, FiMessageSquare, FiShield } from 'react-icons/fi';
 
 const projects = [
   {
+    title: 'Fake Link Detector',
+    subtitle: 'Full-Stack Phishing URL Detection Web Application',
+    desc: 'A full-stack web application that analyzes URLs to help identify potentially malicious or phishing websites. Built with React.js, Node.js, and Express.js, the application validates URLs through a backend API and provides a fast, responsive user interface.',
+    github: 'https://github.com/Sandilyakavi/Fake-Link-Detector',
+    live: 'https://fake-link-detector-nu.vercel.app',
+    tags: ['React.js', 'Node.js', 'Express.js', 'JavaScript', 'Vercel', 'Render'],
+    features: ['URL Validation', 'Phishing Detection', 'REST API', 'Responsive UI', 'Live Deployment'],
+    icon: <FiShield className="text-2xl text-[#10B981]" />,
+    headerColor: 'from-[#10B981]/20 via-[#059669]/5 to-[#09090B]',
+    accentColor: '#10B981',
+    mockup: (
+      <div className="w-full h-full relative flex items-center justify-center p-6 bg-gradient-to-b from-[#10B981]/10 to-transparent">
+        <div className="w-4/5 h-[80%] rounded border border-white/10 bg-[#111827]/90 p-3 shadow-inner flex flex-col space-y-2">
+          <div className="flex items-center space-x-1 border-b border-white/5 pb-1 text-[8px] font-mono text-txtSec">
+            <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+            <span className="w-1.5 h-1.5 rounded-full bg-yellow-500" />
+            <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
+            <span className="ml-2 text-[6px] tracking-wider opacity-60">fake-link-detector.vercel.app</span>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center space-y-2">
+            {/* Shield icon visual */}
+            <div className="relative">
+              <div className="w-8 h-8 rounded-full border-2 border-[#10B981]/60 flex items-center justify-center animate-pulse">
+                <div className="w-4 h-4 rounded-full bg-[#10B981]/30 flex items-center justify-center">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+                </div>
+              </div>
+              <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[#10B981] animate-ping" />
+            </div>
+            {/* URL input simulation */}
+            <div className="w-full px-2">
+              <div className="h-3 w-full bg-white/5 rounded border border-white/10 flex items-center px-1">
+                <div className="h-1 w-3/4 bg-[#10B981]/20 rounded" />
+              </div>
+            </div>
+            {/* Scan result */}
+            <div className="flex items-center space-x-1">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+              <span className="text-[6px] font-mono text-[#10B981] tracking-wider">SCAN_COMPLETE: SAFE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  },
+  {
     title: 'Sustainable Living Courses',
+    subtitle: 'Educational Platform',
     desc: 'An educational platform that promotes sustainable learning through structured online courses and interactive content.',
     github: 'https://github.com/Sandilyakavi/FED-Project',
     live: 'https://fed-project-ten.vercel.app/courses',
     tags: ['React', 'CSS', 'JavaScript'],
+    features: [],
     icon: <FiBookOpen className="text-2xl text-accent" />,
     headerColor: 'from-[#06B6D4]/20 via-[#0891B2]/5 to-[#09090B]',
-    // Custom SVG mockup representation
+    accentColor: '#06B6D4',
     mockup: (
       <div className="w-full h-full relative flex items-center justify-center p-6 bg-gradient-to-b from-[#06B6D4]/10 to-transparent">
         <div className="w-4/5 h-[80%] rounded border border-white/10 bg-[#111827]/90 p-3 shadow-inner flex flex-col space-y-2">
@@ -44,13 +92,15 @@ const projects = [
   },
   {
     title: 'Jarvis AI Voice Assistant',
+    subtitle: 'AI-Powered Voice Interface',
     desc: 'A browser-based AI voice assistant capable of responding to user commands and performing basic internet-related tasks.',
     github: 'https://github.com/Sandilyakavi/Jarvis-AI-',
     live: 'https://jarvis-ai-delta-black.vercel.app',
     tags: ['React', 'JavaScript', 'API', 'Speech Recognition'],
+    features: [],
     icon: <FiMic className="text-2xl text-primary" />,
     headerColor: 'from-[#2563EB]/20 via-[#1D4ED8]/5 to-[#09090B]',
-    // Custom SVG mockup representation
+    accentColor: '#2563EB',
     mockup: (
       <div className="w-full h-full relative flex items-center justify-center p-6 bg-gradient-to-b from-[#2563EB]/10 to-transparent">
         <div className="w-4/5 h-[80%] rounded border border-white/10 bg-[#111827]/90 p-3 shadow-inner flex flex-col justify-between items-center">
@@ -75,13 +125,15 @@ const projects = [
   },
   {
     title: 'Chat App (Chatbox)',
+    subtitle: 'Real-Time Messaging Platform',
     desc: 'A modern chat application focused on messaging with future support planned for voice and video calling features.',
     github: 'https://github.com/Sandilyakavi/Chatbox',
     live: 'https://chatbox-rho-eosin.vercel.app/',
     tags: ['React', 'Firebase', 'JavaScript'],
+    features: [],
     icon: <FiMessageSquare className="text-2xl text-highlight" />,
     headerColor: 'from-[#8B5CF6]/20 via-[#7C3AED]/5 to-[#09090B]',
-    // Custom SVG mockup representation
+    accentColor: '#8B5CF6',
     mockup: (
       <div className="w-full h-full relative flex items-center justify-center p-6 bg-gradient-to-b from-[#8B5CF6]/10 to-transparent">
         <div className="w-4/5 h-[80%] rounded border border-white/10 bg-[#111827]/90 p-3 shadow-inner flex flex-col justify-between">
@@ -127,11 +179,14 @@ export default function Projects() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight font-space">
             Featured <span className="text-accent">Projects</span>
           </h2>
+          <p className="text-txtSec text-sm mt-3 font-light max-w-lg mx-auto">
+            A collection of projects showcasing full-stack development, AI integration, and cybersecurity.
+          </p>
           <div className="w-16 h-[2px] bg-gradient-to-r from-primary to-accent mx-auto mt-4" />
         </motion.div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Projects Grid — 2x2 on large screens for balanced layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -155,10 +210,28 @@ export default function Projects() {
                   <h3 className="text-xl font-bold font-space text-white tracking-wide">
                     {project.title}
                   </h3>
+
+                  {project.subtitle && (
+                    <p className="text-xs font-mono tracking-wider mt-1" style={{ color: project.accentColor }}>
+                      {project.subtitle}
+                    </p>
+                  )}
                   
-                  <p className="text-txtSec text-sm mt-3 font-light leading-relaxed min-h-[72px]">
+                  <p className="text-txtSec text-sm mt-3 font-light leading-relaxed min-h-[60px]">
                     {project.desc}
                   </p>
+
+                  {/* Features (shown only if present) */}
+                  {project.features && project.features.length > 0 && (
+                    <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3">
+                      {project.features.map((feat) => (
+                        <span key={feat} className="text-[11px] font-mono text-txtSec flex items-center space-x-1">
+                          <span className="text-[10px]" style={{ color: project.accentColor }}>✔</span>
+                          <span>{feat}</span>
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mt-4">
