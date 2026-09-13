@@ -81,54 +81,7 @@ export default function Certifications() {
             </div>
           </motion.div>
 
-          {/* Future Credentials Placeholder */}
-          <motion.div 
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.15 }}
-            className="border border-dashed border-white/10 p-6 sm:p-8 rounded-lg bg-white/[0.01] hover:bg-white/[0.02] hover:border-white/20 transition-all duration-300 flex flex-col justify-between"
-          >
-            <div className="space-y-4">
-              <div className="flex justify-between items-start">
-                <div className="p-3 bg-white/[0.02] border border-white/10 rounded-lg text-txtSec/60">
-                  <FiLock className="text-2xl" />
-                </div>
-                <span className="text-[9px] font-mono bg-white/[0.03] text-txtSec/60 border border-white/10 px-2 py-0.5 rounded uppercase tracking-wider">
-                  Queued
-                </span>
-              </div>
 
-              <div>
-                <h3 className="text-xl font-bold text-white/50 font-space">
-                  Cybersecurity & Ethical Hacking Credentials
-                </h3>
-                <p className="text-txtSec/40 text-xs font-mono mt-1">
-                  CompTIA / EC-Council / OffSec
-                </p>
-              </div>
-
-              <p className="text-txtSec/50 text-sm font-light leading-relaxed">
-                Currently learning advanced penetration testing, system exploitation vectors, and network sniffing to prepare for industry-standard cybersecurity certifications.
-              </p>
-
-              <div className="pt-4 border-t border-white/5 space-y-2 text-txtSec/40 text-xs font-mono">
-                <div className="flex items-center">
-                  <FiCalendar className="mr-2" />
-                  <span>Target: 2026 - 2027</span>
-                </div>
-                <div>
-                  <span>Status: Studying Core Syllabi</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-6">
-              <div className="w-full py-2.5 rounded border border-dashed border-white/10 text-xs font-mono font-semibold tracking-wider text-txtSec/30 flex items-center justify-center space-x-1.5">
-                <span>IN PROGRESS</span>
-              </div>
-            </div>
-          </motion.div>
 
         </div>
 

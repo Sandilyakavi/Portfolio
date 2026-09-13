@@ -10,9 +10,7 @@ const navItems = [
   { name: 'Projects', id: 'projects' },
   { name: 'Certifications', id: 'certifications' },
   { name: 'Achievements', id: 'achievements' },
-  { name: 'Blog', id: 'blog' },
   { name: 'Timeline', id: 'timeline' },
-  { name: 'Testimonials', id: 'testimonials' },
   { name: 'Contact', id: 'contact' }
 ];
 

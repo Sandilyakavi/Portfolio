@@ -15,9 +15,7 @@ import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Certifications from './sections/Certifications';
 import Achievements from './sections/Achievements';
-import Blog from './sections/Blog';
 import Timeline from './sections/Timeline';
-import Testimonials from './sections/Testimonials';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
@@ -69,14 +67,8 @@ export default function App() {
               {/* Key Milestones Section */}
               <Achievements />
               
-              {/* Research articles Section */}
-              <Blog />
-              
               {/* Road Map timeline Section */}
               <Timeline />
-              
-              {/* Testimonials Carousel Section */}
-              <Testimonials />
               
               {/* Email Form Contact Section */}
               <Contact />

@@ -4,11 +4,11 @@ import { FiCalendar, FiShield, FiCheckCircle, FiChevronRight } from 'react-icons
 
 export default function Experience() {
   const internshipTasks = [
-    'Studied and applied core ethical hacking and penetration testing methodologies.',
-    'Gained hands-on experience with networking tools and security scanners including Nmap, Wireshark, and Kali Linux utilities.',
-    'Practiced security concepts in sandboxed environments, understanding vulnerabilities and system configuration flaws.',
-    'Explored the OWASP Top 10 web application vulnerabilities and basic risk mitigation techniques.',
-    'Acquired deep security awareness, analyzing common social engineering threat vectors like phishing and credential harvesting.'
+    'Conducted vulnerability assessments and applied penetration testing methodologies in sandboxed environments.',
+    'Utilized industry-standard tools (Nmap, Wireshark, Kali Linux) for network scanning and packet analysis.',
+    'Analyzed OWASP Top 10 vulnerabilities to understand exploit mechanics and implement risk mitigation strategies.',
+    'Documented security flaws and system configuration weaknesses discovered during lab exercises.',
+    'Evaluated social engineering threat vectors to improve organizational security awareness and posture.'
   ];
 
   return (

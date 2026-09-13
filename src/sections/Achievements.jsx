@@ -4,37 +4,37 @@ import { FiTrendingUp, FiGlobe, FiCloudLightning, FiTerminal, FiShield, FiCpu } 
 
 const achievements = [
   {
-    title: 'Projects Deployed Successfully',
-    desc: 'Designed, integrated, and deployed multiple responsive web applications (Sustainable Living, Jarvis Voice Assistant, Chatbox) using React, Vite, Firebase, and CDNs like Vercel and Render.',
+    title: 'Deployed EDR & SOC Infrastructure',
+    desc: 'Architected and deployed a Linux endpoint monitoring dashboard with real-time telemetry processing.',
     status: 'Operational',
-    icon: <FiCloudLightning className="text-xl text-accent" />,
+    icon: <FiShield className="text-xl text-accent" />,
     color: 'border-accent/20 bg-accent/5'
   },
   {
-    title: 'Cybersecurity Learning Pathway',
-    desc: 'Constantly practicing network vulnerability assessments, sandboxed exploitation tasks, traffic sniffing, and threat monitoring strategies.',
-    status: 'In Progress',
-    icon: <FiShield className="text-xl text-primary" />,
+    title: 'Full-Stack Web Deployments',
+    desc: 'Engineered responsive applications utilizing React, Node.js, and Vercel/Render for seamless production delivery.',
+    status: 'Operational',
+    icon: <FiCloudLightning className="text-xl text-primary" />,
     color: 'border-primary/20 bg-primary/5'
   },
   {
-    title: 'Completed Microsoft Azure Certification',
-    desc: 'Validated understanding of cloud models, resource management, identity security, network components, and data privacy compliance structures.',
+    title: 'Microsoft Azure Certified',
+    desc: 'Earned Azure Fundamentals certification, demonstrating core competency in cloud architecture and identity security.',
     status: 'Completed',
     icon: <FiCpu className="text-xl text-highlight" />,
     color: 'border-highlight/20 bg-highlight/5'
   },
   {
-    title: 'Completed Ethical Hacking Internship',
-    desc: 'Engaged in a structured 8-week corporate training program via Eduskills, obtaining foundational proficiency in defensive system hardening and cyber threat vectors.',
+    title: 'Ethical Hacking Internship',
+    desc: 'Completed an intensive 8-week corporate program focusing on system hardening, packet analysis, and threat vectors.',
     status: 'Completed',
     icon: <FiTrendingUp className="text-xl text-accent" />,
     color: 'border-accent/20 bg-accent/5'
   },
   {
-    title: 'Linux & Kali Linux Explorer',
-    desc: 'Comfortable with CLI system controls, bash utilities, networking configuration files, automated package management, and forensic/auditing tools inside Debian-based OS structures.',
-    status: 'Active Study',
+    title: 'Linux Systems Proficiency',
+    desc: 'Mastered CLI systems, bash automation, and networking configurations for Debian-based architectures.',
+    status: 'Active',
     icon: <FiTerminal className="text-xl text-primary" />,
     color: 'border-primary/20 bg-primary/5'
   }

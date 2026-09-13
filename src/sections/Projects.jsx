@@ -1,17 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiExternalLink, FiBookOpen, FiMic, FiMessageSquare, FiShield } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, FiTerminal, FiMic, FiMessageSquare, FiShield } from 'react-icons/fi';
 
 const projects = [
   {
-    title: 'Fake Link Detector',
-    subtitle: 'Full-Stack Phishing URL Detection Web Application',
-    desc: 'A full-stack web application that analyzes URLs to help identify potentially malicious or phishing websites. Built with React.js, Node.js, and Express.js, the application validates URLs through a backend API and provides a fast, responsive user interface.',
-    github: 'https://github.com/Sandilyakavi/Fake-Link-Detector',
-    live: 'https://fake-link-detector-nu.vercel.app',
-    tags: ['React.js', 'Node.js', 'Express.js', 'JavaScript', 'Vercel', 'Render'],
-    features: ['URL Validation', 'Phishing Detection', 'REST API', 'Responsive UI', 'Live Deployment'],
-    icon: <FiShield className="text-2xl text-[#10B981]" />,
+    title: 'Linux EDR & SOC Dashboard',
+    subtitle: 'Real-Time Endpoint Detection & Monitoring',
+    desc: 'A real-time Linux endpoint detection and monitoring dashboard that collects host telemetry and security-related events and presents them through a web-based SOC interface. This deployed instance is primarily intended as a portfolio/demo deployment and is not being presented as a hardened enterprise security product.',
+    github: 'https://github.com/Sandilyakavi/-Linux-Security-Monitor-Intrusion-Detection-System',
+    live: 'https://linux-security-monitor-intrusion-de.vercel.app/',
+    tags: ['Linux', 'React', 'Node.js', 'System Security'],
+    features: ['Real-time Linux host telemetry', 'Endpoint monitoring', 'Threat/security alerts', 'Process/system monitoring', 'SOC-style dashboard'],
+    icon: <FiTerminal className="text-2xl text-[#10B981]" />,
     headerColor: 'from-[#10B981]/20 via-[#059669]/5 to-[#09090B]',
     accentColor: '#10B981',
     mockup: (
@@ -21,28 +21,19 @@ const projects = [
             <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
             <span className="w-1.5 h-1.5 rounded-full bg-yellow-500" />
             <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-            <span className="ml-2 text-[6px] tracking-wider opacity-60">fake-link-detector.vercel.app</span>
+            <span className="ml-2 text-[6px] tracking-wider opacity-60 truncate">linux-security-monitor.vercel.app</span>
           </div>
           <div className="flex-1 flex flex-col items-center justify-center space-y-2">
-            {/* Shield icon visual */}
-            <div className="relative">
-              <div className="w-8 h-8 rounded-full border-2 border-[#10B981]/60 flex items-center justify-center animate-pulse">
-                <div className="w-4 h-4 rounded-full bg-[#10B981]/30 flex items-center justify-center">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
-                </div>
-              </div>
-              <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[#10B981] animate-ping" />
+            {/* Chart sim */}
+            <div className="flex-1 w-full flex items-end space-x-1 opacity-50 pb-1 border-b border-white/5">
+              <div className="w-full h-1/3 bg-[#10B981]/20 rounded-t" />
+              <div className="w-full h-2/3 bg-[#10B981]/40 rounded-t" />
+              <div className="w-full h-1/2 bg-[#10B981]/30 rounded-t" />
+              <div className="w-full h-full bg-[#10B981]/60 rounded-t animate-pulse" />
             </div>
-            {/* URL input simulation */}
-            <div className="w-full px-2">
-              <div className="h-3 w-full bg-white/5 rounded border border-white/10 flex items-center px-1">
-                <div className="h-1 w-3/4 bg-[#10B981]/20 rounded" />
-              </div>
-            </div>
-            {/* Scan result */}
-            <div className="flex items-center space-x-1">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
-              <span className="text-[6px] font-mono text-[#10B981] tracking-wider">SCAN_COMPLETE: SAFE</span>
+            <div className="text-[6px] font-mono text-[#10B981] flex w-full justify-between">
+              <span>HOST: SECURE</span>
+              <span>ALERTS: 0</span>
             </div>
           </div>
         </div>
@@ -50,54 +41,13 @@ const projects = [
     )
   },
   {
-    title: 'Sustainable Living Courses',
-    subtitle: 'Educational Platform',
-    desc: 'An educational platform that promotes sustainable learning through structured online courses and interactive content.',
-    github: 'https://github.com/Sandilyakavi/FED-Project',
-    live: 'https://fed-project-ten.vercel.app/courses',
-    tags: ['React', 'CSS', 'JavaScript'],
-    features: [],
-    icon: <FiBookOpen className="text-2xl text-accent" />,
-    headerColor: 'from-[#06B6D4]/20 via-[#0891B2]/5 to-[#09090B]',
-    accentColor: '#06B6D4',
-    mockup: (
-      <div className="w-full h-full relative flex items-center justify-center p-6 bg-gradient-to-b from-[#06B6D4]/10 to-transparent">
-        <div className="w-4/5 h-[80%] rounded border border-white/10 bg-[#111827]/90 p-3 shadow-inner flex flex-col space-y-2">
-          <div className="flex items-center space-x-1 border-b border-white/5 pb-1 text-[8px] font-mono text-txtSec">
-            <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
-            <span className="w-1.5 h-1.5 rounded-full bg-yellow-500" />
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-            <span className="ml-2 text-[6px] tracking-wider opacity-60">fed-project.vercel.app/courses</span>
-          </div>
-          <div className="flex-1 flex flex-col justify-between">
-            <div className="space-y-1">
-              <div className="h-2 w-1/2 bg-accent/20 rounded" />
-              <div className="h-1.5 w-3/4 bg-white/5 rounded" />
-              <div className="h-1.5 w-2/3 bg-white/5 rounded" />
-            </div>
-            {/* Simulation of a course progress */}
-            <div className="space-y-1 pt-2">
-              <div className="flex justify-between text-[7px] font-mono text-accent">
-                <span>Green Energy Module</span>
-                <span>65%</span>
-              </div>
-              <div className="h-1 w-full bg-white/5 rounded-full overflow-hidden">
-                <div className="h-full w-[65%] bg-accent" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  },
-  {
-    title: 'Jarvis AI Voice Assistant',
-    subtitle: 'AI-Powered Voice Interface',
-    desc: 'A browser-based AI voice assistant capable of responding to user commands and performing basic internet-related tasks.',
+    title: 'Jarvis / PersonalAI',
+    subtitle: 'AI-Powered Assistant Architecture',
+    desc: 'An AI assistant project positioned as a software engineering and AI systems case study. It highlights backend API integrations, automation, modular architecture, and practical AI application development.',
     github: 'https://github.com/Sandilyakavi/Jarvis-AI-',
     live: 'https://jarvis-ai-delta-black.vercel.app',
-    tags: ['React', 'JavaScript', 'API', 'Speech Recognition'],
-    features: [],
+    tags: ['React', 'JavaScript', 'API', 'Automation'],
+    features: ['AI assistant architecture', 'Frontend/backend communication', 'Modular architecture', 'Automation'],
     icon: <FiMic className="text-2xl text-primary" />,
     headerColor: 'from-[#2563EB]/20 via-[#1D4ED8]/5 to-[#09090B]',
     accentColor: '#2563EB',
@@ -108,7 +58,6 @@ const projects = [
             <span className="text-[6px] opacity-60">JARVIS_AI_CONSOLE</span>
             <span className="text-[6px] text-primary">MIC_ACTIVE</span>
           </div>
-          {/* Animated voice wave simulator */}
           <div className="flex items-center space-x-1.5 h-8">
             <div className="w-1 h-3 bg-primary rounded animate-pulse" style={{ animationDelay: '0.1s' }} />
             <div className="w-1 h-6 bg-accent rounded animate-pulse" style={{ animationDelay: '0.2s' }} />
@@ -117,7 +66,50 @@ const projects = [
             <div className="w-1 h-2 bg-primary rounded animate-pulse" style={{ animationDelay: '0.5s' }} />
           </div>
           <div className="text-[6px] font-mono text-txtSec/60 tracking-wider">
-            "Searching Linux directory protocols..."
+            "Processing voice query..."
+          </div>
+        </div>
+      </div>
+    )
+  },
+  {
+    title: 'Fake Link Detector',
+    subtitle: 'Full-Stack Phishing URL Detection',
+    desc: 'A full-stack web application that analyzes URLs to help identify potentially malicious or phishing websites. Built with React.js, Node.js, and Express.js, the application validates URLs through a backend API and provides a fast, responsive user interface.',
+    github: 'https://github.com/Sandilyakavi/Fake-Link-Detector',
+    live: 'https://fake-link-detector-nu.vercel.app',
+    tags: ['React.js', 'Node.js', 'Express.js', 'Vercel'],
+    features: ['URL Validation', 'Phishing Detection', 'REST API', 'Responsive UI'],
+    icon: <FiShield className="text-2xl text-[#06B6D4]" />,
+    headerColor: 'from-[#06B6D4]/20 via-[#0891B2]/5 to-[#09090B]',
+    accentColor: '#06B6D4',
+    mockup: (
+      <div className="w-full h-full relative flex items-center justify-center p-6 bg-gradient-to-b from-[#06B6D4]/10 to-transparent">
+        <div className="w-4/5 h-[80%] rounded border border-white/10 bg-[#111827]/90 p-3 shadow-inner flex flex-col space-y-2">
+          <div className="flex items-center space-x-1 border-b border-white/5 pb-1 text-[8px] font-mono text-txtSec">
+            <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+            <span className="w-1.5 h-1.5 rounded-full bg-yellow-500" />
+            <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
+            <span className="ml-2 text-[6px] tracking-wider opacity-60">fake-link-detector.vercel.app</span>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center space-y-2">
+            <div className="relative">
+              <div className="w-8 h-8 rounded-full border-2 border-[#06B6D4]/60 flex items-center justify-center animate-pulse">
+                <div className="w-4 h-4 rounded-full bg-[#06B6D4]/30 flex items-center justify-center">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#06B6D4]" />
+                </div>
+              </div>
+              <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[#06B6D4] animate-ping" />
+            </div>
+            <div className="w-full px-2">
+              <div className="h-3 w-full bg-white/5 rounded border border-white/10 flex items-center px-1">
+                <div className="h-1 w-3/4 bg-[#06B6D4]/20 rounded" />
+              </div>
+            </div>
+            <div className="flex items-center space-x-1">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#06B6D4]" />
+              <span className="text-[6px] font-mono text-[#06B6D4] tracking-wider">SCAN_COMPLETE: SAFE</span>
+            </div>
           </div>
         </div>
       </div>
@@ -130,7 +122,7 @@ const projects = [
     github: 'https://github.com/Sandilyakavi/Chatbox',
     live: 'https://chatbox-rho-eosin.vercel.app/',
     tags: ['React', 'Firebase', 'JavaScript'],
-    features: [],
+    features: ['Real-time messaging', 'Firebase integration', 'Responsive UI'],
     icon: <FiMessageSquare className="text-2xl text-highlight" />,
     headerColor: 'from-[#8B5CF6]/20 via-[#7C3AED]/5 to-[#09090B]',
     accentColor: '#8B5CF6',

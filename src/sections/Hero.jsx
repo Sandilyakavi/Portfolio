@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiDownload, FiTerminal } from 'react-icons/fi';
+import { FiArrowRight, FiDownload, FiTerminal, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
 const typingSequences = [
-  'B.Tech CSE Student',
-  'Cybersecurity Enthusiast',
-  'Web Developer',
-  'Python Learner',
-  'Linux Explorer',
-  'React Developer'
+  'Cybersecurity Developer',
+  'Linux Security',
+  'Full-Stack Engineering',
+  'SOC Analysis',
+  'Python & React'
 ];
 
 function TypingEffect() {
@@ -133,7 +132,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-txtSec max-w-xl text-base md:text-lg leading-relaxed font-light"
           >
-            I enjoy learning cybersecurity, building modern web applications and exploring how software, networking and Linux work together. My goal is to continuously improve through hands-on projects and real-world experience.
+            I am a cybersecurity-focused developer who actually builds and deploys real technical projects. My expertise bridges system security, Linux endpoint monitoring, and full-stack software development to create robust, practical solutions.
           </motion.p>
 
           {/* Premium Call to Action Buttons */}
@@ -160,7 +159,38 @@ export default function Hero() {
               className="px-6 py-3.5 rounded border border-white/10 hover:border-accent/40 bg-white/[0.02] text-[#E4E4E7] font-semibold font-space tracking-wide text-sm flex items-center space-x-2 transition-all duration-300 hover:bg-white/[0.05] hover:text-white transform hover:scale-[1.02]"
             >
               <FiDownload />
-              <span>Download Resume</span>
+              <span>Resume</span>
+            </a>
+            
+            {/* GitHub */}
+            <a 
+              href="https://github.com/Sandilyakavi"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-3.5 rounded border border-white/10 hover:border-[#06B6D4]/40 bg-white/[0.02] text-[#E4E4E7] transition-all duration-300 hover:bg-white/[0.05] hover:text-[#06B6D4] transform hover:scale-[1.02] flex items-center justify-center"
+              aria-label="GitHub"
+            >
+              <FiGithub className="text-lg" />
+            </a>
+            
+            {/* LinkedIn */}
+            <a 
+              href="https://www.linkedin.com/in/kavi-sandilya-86a66831b/?skipRedirect=true"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-3.5 rounded border border-white/10 hover:border-[#2563EB]/40 bg-white/[0.02] text-[#E4E4E7] transition-all duration-300 hover:bg-white/[0.05] hover:text-[#2563EB] transform hover:scale-[1.02] flex items-center justify-center"
+              aria-label="LinkedIn"
+            >
+              <FiLinkedin className="text-lg" />
+            </a>
+            
+            {/* Contact */}
+            <a 
+              href="#contact"
+              className="px-4 py-3.5 rounded border border-white/10 hover:border-[#8B5CF6]/40 bg-white/[0.02] text-[#E4E4E7] transition-all duration-300 hover:bg-white/[0.05] hover:text-[#8B5CF6] transform hover:scale-[1.02] flex items-center justify-center"
+              aria-label="Contact"
+            >
+              <FiMail className="text-lg" />
             </a>
           </motion.div>
         </div>

@@ -5,56 +5,44 @@ import { FiPlayCircle, FiCode, FiLayers, FiGlobe, FiTerminal, FiShield, FiBriefc
 const timelineEvents = [
   {
     year: '2023',
-    title: 'Started B.Tech at KL University',
-    desc: 'Commenced B.Tech in Computer Science Engineering, laying down core foundations in systems, algorithms, and logic structures.',
+    title: 'Commenced B.Tech in Computer Science',
+    desc: 'Began engineering studies focusing on systems, logic structures, and foundational programming paradigms.',
     icon: <FiPlayCircle className="text-accent" />
   },
   {
-    year: '2023',
-    title: 'Learned Python Programming',
-    desc: 'Acquired programming basics, practicing scripting, object-oriented concepts, and automation tools.',
-    icon: <FiCode className="text-primary" />
+    year: '2024',
+    title: 'Full-Stack Development Focus',
+    desc: 'Built and deployed modern web applications utilizing React, Node.js, and CI/CD pipelines (Vercel/Render).',
+    icon: <FiLayers className="text-primary" />
   },
   {
     year: '2024',
-    title: 'Started React Development',
-    desc: 'Began exploring modern UI development, single-page application routing, hooks, and responsive design systems.',
-    icon: <FiLayers className="text-highlight" />
-  },
-  {
-    year: '2024',
-    title: 'Built & Deployed Websites',
-    desc: 'Integrated applications with Firebase storage, managing hosting, domains, and deploying operational pages using Vercel and Render.',
-    icon: <FiGlobe className="text-accent" />
-  },
-  {
-    year: '2024',
-    title: 'Learned Linux Administration',
-    desc: 'Explored Debian-based terminal systems, shell file-hierarchy permissions, networking packages, and security protocols.',
-    icon: <FiTerminal className="text-primary" />
-  },
-  {
-    year: '2024',
-    title: 'Started Cybersecurity Studies',
-    desc: 'Dived into network packet inspections, ethical hacking modules, defensive systems, and credential security methodologies.',
-    icon: <FiShield className="text-highlight" />
+    title: 'Linux & Security Foundations',
+    desc: 'Established proficiency in Linux server administration, bash automation, and network protocol analysis.',
+    icon: <FiTerminal className="text-highlight" />
   },
   {
     year: '2025',
-    title: 'Completed Ethical Hacking Internship',
-    desc: 'Finished an 8-week structured practical internship with Eduskills, focused on sandboxed systems audit training.',
+    title: 'Ethical Hacking Internship',
+    desc: 'Completed an intensive 8-week internship focused on penetration testing, threat analysis, and risk mitigation.',
     icon: <FiBriefcase className="text-accent" />
   },
   {
     year: '2025',
     title: 'Earned Azure Fundamentals Certification',
-    desc: 'Completed the Microsoft Certified: Azure Fundamentals certification, validating cloud architecture structures.',
+    desc: 'Validated cloud computing expertise, covering architecture, identity security, and network components.',
     icon: <FiAward className="text-primary" />
+  },
+  {
+    year: '2026',
+    title: 'Deployed EDR & SOC Dashboard',
+    desc: 'Architected and launched a real-time endpoint monitoring solution for Linux hosts.',
+    icon: <FiShield className="text-highlight" />
   },
   {
     year: '2028',
     title: 'Future Goal: Cybersecurity Engineer',
-    desc: 'Striving to design, configure, and scale secure network defenses and penetration audit setups as a lead cybersecurity architect.',
+    desc: 'Aiming to design, implement, and scale enterprise-grade network defenses and incident response strategies.',
     icon: <FiTarget className="text-accent animate-pulse" />,
     future: true
   }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FiCode, FiLayers, FiBriefcase, FiAward } from 'react-icons/fi';
+import { FiCode, FiLayers, FiBriefcase, FiAward, FiShield } from 'react-icons/fi';
 
 function AnimatedCounter({ value, duration = 1.5, suffix = '' }) {
   const [count, setCount] = useState(0);
@@ -63,18 +63,18 @@ export default function About() {
 
   const stats = [
     { 
-      label: 'Projects Completed', 
+      label: 'Security & Dev Projects', 
       value: '10', 
       suffix: '+',
-      icon: <FiCode className="text-xl text-accent" />, 
-      desc: 'Academic & Personal builds' 
+      icon: <FiShield className="text-xl text-accent" />, 
+      desc: 'EDR, AI & Web builds' 
     },
     { 
-      label: 'Technologies Learned', 
+      label: 'Technologies', 
       value: '15', 
       suffix: '+',
       icon: <FiLayers className="text-xl text-primary" />, 
-      desc: 'Languages, frameworks, tools' 
+      desc: 'Linux, Python, React, APIs' 
     },
     { 
       label: 'Internship Experience', 
@@ -85,10 +85,10 @@ export default function About() {
     },
     { 
       label: 'Certifications', 
-      value: '3', 
+      value: '1', 
       suffix: '',
       icon: <FiAward className="text-xl text-accent" />, 
-      desc: 'Azure Fundamentals & Hacking' 
+      desc: 'Azure Fundamentals' 
     }
   ];
 
@@ -129,15 +129,15 @@ export default function About() {
             </h3>
             
             <p>
-              I am currently pursuing my <span className="text-white font-medium">B.Tech in Computer Science Engineering</span> at <span className="text-accent font-medium">KL University</span> (3rd Year, 1st Semester). My interest in engineering revolves around understanding how complex computer systems communicate, how software is structured, and how we can defend digital assets against evolving threats.
+              I am a <span className="text-white font-medium">Cybersecurity Developer</span> and Computer Science Engineering student (Class of 2028). My interest in engineering revolves around understanding how complex computer systems communicate, how software is structured, and how we can defend digital assets against evolving threats.
             </p>
 
             <p>
-              Instead of relying strictly on theoretical textbooks, I am highly passionate about <span className="text-white font-medium">project-based learning</span>. I believe the best way to master networking protocols, scripting utilities, or frontend libraries is to write the code, deploy the systems, break them, and then figure out how to fix them.
+              Rather than relying strictly on theoretical textbooks, I am highly passionate about <span className="text-white font-medium">project-based learning</span>. I believe the best way to master networking protocols, security monitoring, or frontend libraries is to write the code, deploy the systems, monitor the endpoints, and fix the vulnerabilities.
             </p>
 
             <p>
-              My toolkit spans across frontend web development using <span className="text-white font-medium">React</span> (frequently deploying to platforms like Vercel and Render), scripting in <span className="text-white font-medium">Python</span>, systems administration using <span className="text-white font-medium">Linux & Kali Linux</span>, and the fundamentals of local and network security.
+              My toolkit spans across building full-stack applications with <span className="text-white font-medium">React & Node.js</span>, scripting security tools in <span className="text-white font-medium">Python</span>, and deep-diving into systems administration using <span className="text-white font-medium">Linux</span>. I actively build projects like SOC dashboards and endpoint monitoring tools to apply security concepts in real-world scenarios.
             </p>
 
             <div className="pt-2 border-t border-white/5 flex flex-wrap gap-4 text-xs font-mono text-txtSec">

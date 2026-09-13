@@ -1,56 +1,57 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiCode, FiCpu, FiTerminal, FiGlobe, FiTool, FiCloud } from 'react-icons/fi';
+import { FiCode, FiCpu, FiTerminal, FiGlobe, FiTool, FiShield } from 'react-icons/fi';
 
 const skillCategories = [
   {
+    title: 'Cybersecurity',
+    icon: <FiShield className="text-xl text-accent" />,
+    skills: [
+      { name: 'Linux Security', level: 'Advanced', width: '85%' },
+      { name: 'Security Monitoring', level: 'Proficient', width: '80%' },
+      { name: 'Endpoint Security', level: 'Proficient', width: '80%' },
+      { name: 'Threat Detection', level: 'Intermediate', width: '70%' },
+      { name: 'SOC Concepts', level: 'Intermediate', width: '65%' },
+      { name: 'Incident Response', level: 'Intermediate', width: '60%' }
+    ]
+  },
+  {
     title: 'Programming',
-    icon: <FiCode className="text-xl text-accent" />,
+    icon: <FiCode className="text-xl text-primary" />,
     skills: [
+      { name: 'Python', level: 'Advanced', width: '85%' },
       { name: 'JavaScript', level: 'Advanced', width: '85%' },
-      { name: 'Python', level: 'Proficient', width: '80%' },
-      { name: 'HTML & CSS', level: 'Proficient', width: '85%' },
-      { name: 'SQL', level: 'Intermediate', width: '65%' },
-      { name: 'C', level: 'Intermediate', width: '60%' }
+      { name: 'Bash / Shell', level: 'Proficient', width: '80%' },
+      { name: 'C', level: 'Intermediate', width: '65%' }
     ]
   },
   {
-    title: 'Frameworks & Libraries',
-    icon: <FiCpu className="text-xl text-primary" />,
-    skills: [
-      { name: 'React', level: 'Advanced', width: '85%' }
-    ]
-  },
-  {
-    title: 'Operating Systems',
-    icon: <FiTerminal className="text-xl text-highlight" />,
-    skills: [
-      { name: 'Linux', level: 'Proficient', width: '80%' },
-      { name: 'Kali Linux', level: 'Proficient', width: '75%' }
-    ]
-  },
-  {
-    title: 'Tools & Platforms',
-    icon: <FiTool className="text-xl text-accent" />,
-    skills: [
-      { name: 'Git', level: 'Proficient', width: '80%' },
-      { name: 'GitHub', level: 'Proficient', width: '85%' },
-      { name: 'VS Code', level: 'Advanced', width: '90%' }
-    ]
-  },
-  {
-    title: 'Deployment',
-    icon: <FiCloud className="text-xl text-primary" />,
-    skills: [
-      { name: 'Vercel', level: 'Proficient', width: '80%' },
-      { name: 'Render', level: 'Intermediate', width: '70%' }
-    ]
-  },
-  {
-    title: 'Networking Basics',
+    title: 'Web Development',
     icon: <FiGlobe className="text-xl text-highlight" />,
     skills: [
-      { name: 'Networking Basics', level: 'Intermediate', width: '65%' }
+      { name: 'React', level: 'Advanced', width: '85%' },
+      { name: 'Tailwind CSS', level: 'Proficient', width: '80%' },
+      { name: 'Vite', level: 'Proficient', width: '75%' },
+      { name: 'REST APIs', level: 'Intermediate', width: '70%' }
+    ]
+  },
+  {
+    title: 'Systems & Networking',
+    icon: <FiTerminal className="text-xl text-accent" />,
+    skills: [
+      { name: 'Linux', level: 'Advanced', width: '90%' },
+      { name: 'System Monitoring', level: 'Proficient', width: '80%' },
+      { name: 'Process Monitoring', level: 'Proficient', width: '80%' },
+      { name: 'Networking Fundamentals', level: 'Intermediate', width: '70%' }
+    ]
+  },
+  {
+    title: 'Tools & Version Control',
+    icon: <FiTool className="text-xl text-primary" />,
+    skills: [
+      { name: 'Git', level: 'Proficient', width: '85%' },
+      { name: 'GitHub', level: 'Proficient', width: '85%' },
+      { name: 'VS Code', level: 'Advanced', width: '90%' }
     ]
   }
 ];
